@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORM</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/f55c5430f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+        <div class="container">
+            <header>FORM</header>
+            <form action="" id="form" >
+                <h1>Details</h1>
+                <div id="input_group">
+                    <label for="Firstname">Firstname</label>
+                    <input type="text" placeholder="Enter your firstname" id="fname" >
+
+                </div>
+                <div id="input_group">
+                    <label for="Lastname">Lastname</label>
+                    <input type="text" placeholder="Enter your lastname" id="lname" >
+                
+                </div>
+                <div id="input_group">
+                    <label for="Gender">Gender</label>
+                    <input type="text" placeholder="Enter your gender" id="gender">
+                   
+                </div>
+                <div id="input_group">
+                    <label for="Choice of Food">Choice of Food</label>
+                    <p>Option1</p>
+                    <select name="option1" id="option1">
+                        <option value="default">Default</option>
+                        <option value="Mango">Mango</option>
+                        <option value="straberry">Straberry</option>
+                        <option value="Pineapple">Pineapple</option>
+                    </select>
+                    <p>Option2</p>
+                    <select name="option2" id="option2">
+                        <option value="default">Default</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Pappaya">Pappaya</option>
+                        <option value="Grape">Grape</option>
+                    </select>
+                </div>
+                <div id="input_group">
+                    <label for="Address">Address</label>
+                    <input type="text" placeholder="Enter your Address" id="address">
+                </div>
+                <div id="input_group">
+                    <label for="Pincode">Pincode</label>
+                    <input type="text" placeholder="Enter your Pincode" id="pincode">
+                </div>
+                <div id="input_group">
+                    <label for="State">State</label>
+                    <input type="text" placeholder="Enter your State" id="state">
+                </div>
+                <div id="input_group">
+                    <label for="Country">Country</label>
+                    <input type="text" placeholder="Enter your Country" id="country">
+                </div>
+                <button type="button" value="Add" onclick="Addrow()">Submit</button>
+                
+            </form>
+
+
+        
+
+            <table class="table table-bordered bg-light border-dark-subtle" id="table">
+                <thead>
+                    <tr>
+                        <th  class="align-middle text-center" scope="col" rowspan="2">Firstname</th>
+                        <th  class="align-middle text-center" scope="col" rowspan="2">laststname</th>
+                        <th  class="align-middle text-center" scope="col" rowspan="2">Gender</th>
+                        <th  class="align-middle text-center" scope="col" colspan="2">Food</th>
+                        <th  class="align-middle text-center" scope="col" rowspan="2">Address</th>
+                        <th  class="align-middle text-center" scope="col" rowspan="2">Pincode</th>
+                        <th  class="align-middle text-center" scope="col" rowspan="2">State</th>
+                        <th  class="align-middle text-center" scope="col" rowspan="2">Country</th>
+                    </tr>
+                    <tr>
+                        <th class="text-center" scope="col">Option1</th>
+                        <th class="text-center" scope="col">Option2</th>
+                    </tr>
+                </thead>
+                <tbody id="show">
+
+                </tbody>
+            </table>
+            
+        </div>
+    <script src="./Script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
